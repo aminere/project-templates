@@ -1,0 +1,27 @@
+{
+  "name": "react-ts-webpack-template",
+  "version": "1.0.0",
+  "description": "A minimalist template for starting projects with React, Typescript, Blueprintjs, and Webpack.",
+  "scripts": {
+	"start": "webpack-dev-server",
+    "build": "webpack"    
+  },
+  "author": "Amine Rehioui",
+  "license": "ISC",
+  "dependencies": {
+    "@blueprintjs/core": "^3.15.1",
+    "@types/react-dom": "^16.8.4",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}
