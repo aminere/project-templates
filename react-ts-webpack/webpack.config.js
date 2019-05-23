@@ -9,15 +9,20 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/dist'
   },
-  resolve: {    
+  resolve: {
     extensions: ['.ts', '.tsx', '.js']
   },
   module: {
     rules: [
       {
-         test: /\.tsx?$/, 
-         loader: 'ts-loader',
-         include: [
+        test: /\.tsx?$/,
+        enforce: 'pre',
+        use: 'tslint-loader'
+      },
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        include: [
           path.resolve(__dirname, 'src')
         ]
       }

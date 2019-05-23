@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A minimalist template for starting projects with React, Typescript, Blueprintjs, and Webpack.",
   "scripts": {
-	"start": "webpack-dev-server",
-    "build": "webpack"    
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "Amine Rehioui",
   "license": "ISC",
@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "ts-loader": "^6.0.1",
+    "tslint": "^5.16.0",
+    "tslint-loader": "^3.5.4",
     "typescript": "^3.4.5",
     "webpack": "^4.32.1",
     "webpack-cli": "^3.3.2",

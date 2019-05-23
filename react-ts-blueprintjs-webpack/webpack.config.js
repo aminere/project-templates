@@ -16,6 +16,11 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
+        enforce: 'pre',
+        use: 'tslint-loader'
+      },
+      {
+        test: /\.tsx?$/,
         loader: 'ts-loader',
         include: [
           path.resolve(__dirname, 'src')
